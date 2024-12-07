@@ -1,0 +1,77 @@
+
+
+.brand {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Signup Container */
+.signupContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top:0;
+  margin-top: 0;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #7bace6, #fafafa);
+  color: #333;
+
+}
+
+/* Signup Form */
+.signupForm {
+  background: #fff;
+  padding-top: 0;
+  margin-top: 0;
+  padding: 5% 5%;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.signupForm h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Input Fields */
+.inputField {
+  width: 90%;
+  padding: 14px;
+  margin: 12px 0;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.inputField:focus {
+  border-color: #0070f3;
+  box-shadow: 0 0 8px rgba(0, 112, 243, 0.2);
+  outline: none;
+}
+
+/* Submit Button */
+.submitButton {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #0070f3, #005bb5);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.submitButton:hover {
+  background: linear-gradient(90deg, #005bb5, #003d80);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+

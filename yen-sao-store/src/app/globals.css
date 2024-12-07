@@ -1,0 +1,85 @@
+/* Globals.css */
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    font-family: 'Arial', sans-serif; /* Font mặc định */
+    background-color: #FAF7F3; /* Màu nền chung */
+    color: #4A4A4A; /* Màu chữ mặc định */
+    line-height: 1.6; /* Khoảng cách dòng */
+  }
+  
+  /* Định nghĩa màu sắc và kiểu chung */
+  :root {
+    --primary-color: #6B4F2F; /* Màu chính cho nút bấm */
+    --secondary-color: #C1BAA1; /* Màu nền nhẹ */
+    --hover-color: #A59D84; /* Màu khi hover */
+    --text-color: #4A4A4A; /* Màu chữ */
+    --background-color: #FAF7F3; /* Màu nền */
+    --border-radius: 5px; /* Đường bo tròn */
+  }
+  
+  /* Body style */
+  body {
+    background-color: var(--background-color);
+  }
+  
+  /* Button styles */
+  button {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: var(--hover-color);
+  }
+  
+  /* Links */
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: var(--hover-color);
+  }
+  
+  /* Container padding */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Heading styles */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  
+  /* Responsive typography */
+  @media (max-width: 768px) {
+    html {
+      font-size: 90%; /* Thu nhỏ font chữ trên màn hình nhỏ */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    html {
+      font-size: 80%; /* Thu nhỏ hơn nữa trên thiết bị nhỏ */
+    }
+  }
+  

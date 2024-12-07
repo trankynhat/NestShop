@@ -1,0 +1,104 @@
+/* Navbar.module.css */
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ECEBDE; /* Màu nền navbar */
+  color: #A59D84; /* Màu chữ */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ đậm hơn */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo container */
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Links container */
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-grow: 1;
+  margin-left: auto;
+}
+
+/* Auth Links */
+.authLinks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: auto;
+  justify-content: flex-end;
+}
+
+/* Navigation links */
+.navLink {
+  text-decoration: none;
+  color: #6B4F2F; /* Màu chữ đậm hơn */
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Highlighting the Signup button */
+.navLink.signup {
+  background-color: #C1BAA1;
+  color: #ECEBDE;
+  font-weight: bold;
+}
+
+/* Hover effect for links */
+.navLink:hover {
+  background-color: #A59D84; /* Màu nền hover đậm hơn */
+  color: #ECEBDE;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navLinks,
+  .authLinks {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .logoContainer {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .navLink {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+  }
+}

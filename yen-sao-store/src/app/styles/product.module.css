@@ -1,0 +1,23 @@
+/* src/styles/product.module.css */
+
+.productPage {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .productImage {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .productDescription {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .productPrice {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  

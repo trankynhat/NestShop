@@ -1,0 +1,97 @@
+/* Banner Section */
+.banner {
+    background-color: #ECEBDE; /* Màu nền nhẹ nhàng như navbar */
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom: 2px solid #A59D84; /* Thêm viền để tách biệt banner và nội dung */
+  }
+  
+  /* Banner Heading */
+  .bannerHeading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #6B4F2F; /* Màu chữ đậm hơn, dễ đọc */
+    margin-bottom: 10px;
+  }
+  
+  /* Banner SubText */
+  .bannerSubText {
+    font-size: 1.2rem;
+    color: #A59D84; /* Màu chữ nhẹ nhàng và hài hòa với navbar */
+  }
+  
+  /* Container */
+  .container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Intro Section */
+  .intro {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  /* Intro Heading */
+  .heading {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Intro Text */
+  .text {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Products Section */
+  .products {
+    text-align: center;
+  }
+  
+  /* Product List */
+  .productList {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Product Item */
+  .product {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ cho các sản phẩm */
+    transition: transform 0.3s ease; /* Thêm hiệu ứng hover cho sản phẩm */
+  }
+  
+  .product:hover {
+    transform: translateY(-5px); /* Hiệu ứng nâng sản phẩm lên khi hover */
+  }
+  
+  /* Product Image */
+  .productImage {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Product Name */
+  .productName {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Product Price */
+  .productPrice {
+    font-size: 1rem;
+    color: #e63946; /* Màu đỏ nổi bật cho giá sản phẩm */
+  }
+  

@@ -1,0 +1,91 @@
+/* Header.module.css */
+
+/* Header container */
+.header {
+  background-color: #9a938d; /* Màu nền nhẹ cho header */
+  padding: 40px 20px;
+  text-align: center;
+  position: sticky;
+}
+
+/* Container cho logo và slogan */
+.header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; /* Đặt khoảng cách đều giữa logo và slogan */
+  gap: 5%; /* Khoảng cách giữa logo và slogan */
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  height: 150px; /* Kích thước logo */
+  width: auto;
+  object-fit: contain;
+}
+
+/* Slogan */
+.slogan {
+  font-size: 2.5rem; /* Tăng kích thước chữ để nổi bật */
+  color: #be5d12; /* Màu nâu hài hòa với thiết kế */
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  margin-top: 10px;
+  text-align: left; /* Căn trái để phù hợp với thiết kế desktop */
+  line-height: 1.4; /* Dãn dòng để tăng tính thẩm mỹ */
+}
+
+/* Đảm bảo Header linh hoạt trên các màn hình nhỏ */
+@media (max-width: 1024px) {
+  .header .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Tăng khoảng cách giữa các thành phần */
+  }
+
+  .slogan {
+    font-size: 2rem; /* Giảm kích thước chữ trên tablet */
+    text-align: center; /* Căn giữa để phù hợp với màn hình nhỏ hơn */
+  }
+
+  .logoImage {
+    height: 120px; /* Giảm kích thước logo */
+  }
+}
+
+@media (max-width: 768px) {
+  .header .container {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .slogan {
+    font-size: 1.8rem; /* Giảm kích thước chữ trên thiết bị di động */
+  }
+
+  .logoImage {
+    height: 100px; /* Giảm kích thước logo trên thiết bị di động */
+  }
+}
+
+@media (max-width: 480px) {
+  .header .container {
+    padding: 5px;
+  }
+
+  .slogan {
+    font-size: 1.5rem; /* Giảm kích thước chữ cho điện thoại nhỏ */
+    text-align: center;
+    line-height: 1.2; /* Dãn dòng nhỏ hơn cho phù hợp */
+  }
+
+  .logoImage {
+    height: 80px; /* Logo nhỏ hơn trên thiết bị rất nhỏ */
+  }
+}

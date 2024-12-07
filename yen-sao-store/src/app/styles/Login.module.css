@@ -1,0 +1,97 @@
+/* Container chính */
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 0 ;
+  margin-top: 0;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #7bace6, #fafafa);
+  color: #333;
+
+}
+
+/* Form đăng nhập */
+.loginForm {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Tiêu đề form */
+.heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #333333;
+}
+
+/* Form group (nhóm label và input) */
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+/* Label của input */
+.formLabel {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Input field */
+.inputField {
+  width: 90%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.2s ease;
+}
+
+.inputField:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Nút submit */
+.submitButton {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #0070f3, #005bb5);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+
+.submitButton:hover {
+  background-color: #0056b3;
+}
+
+/* Phần thông báo đăng ký */
+.registerPrompt {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.registerLink {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.registerLink:hover {
+  text-decoration: underline;
+}
